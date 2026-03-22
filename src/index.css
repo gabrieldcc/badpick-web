@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #05090f;
+  --bg-elevated: #0b121c;
+  --surface: #0e1623;
+  --card: #121d2d;
+  --card-soft: #172537;
+  --footer-bg: #0c141f;
+  --text: #e9f4ff;
+  --heading: #f5fbff;
+  --muted: #98acc2;
+  --brand: #00b9ff;
+  --brand-strong: #3cd4ff;
+  --border: #23354d;
+  --notice-bg: #10263a;
+  --shadow-soft: 0 20px 40px rgba(0, 0, 0, 0.45);
+
+  font-family: 'Source Sans 3', 'Trebuchet MS', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 15% -5%, rgba(0, 185, 255, 0.2) 0%, rgba(0, 185, 255, 0) 40%),
+    radial-gradient(circle at 90% 10%, rgba(60, 212, 255, 0.12) 0%, rgba(60, 212, 255, 0) 35%),
+    linear-gradient(180deg, var(--bg-elevated) 0%, var(--bg) 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Manrope', 'Avenir Next', sans-serif;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--heading);
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    transition-duration: 0s !important;
+    animation-duration: 0s !important;
+  }
+}
